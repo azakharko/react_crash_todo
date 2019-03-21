@@ -1,0 +1,12 @@
+my-running-app:
+  image: 'azakharko/storage:latest'
+  command:
+    sh -c 'npm start'
+  container_name: my-running-app
+  environment:
+    - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/src/app
+    - NODE_VERSION=10.15.3
+    - YARN_VERSION=1.13.0
+  ports:
+    - 8801:3000/tcp
+  working_dir: /src/app

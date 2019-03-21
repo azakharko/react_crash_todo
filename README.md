@@ -1,7 +1,3 @@
-# React Crash Course (TodoList)
-
-This is the code for the crash course on YouTube
-
 ## Quick Start
 
 ```bash
@@ -22,7 +18,7 @@ docker build -t my-nodejs-app .
 
 ## Docker run
 ```bash 
-docker run -d --name my-running-app -p 3000:3000 my-nodejs-app
+docker run -d --name my-running-app -p 8801:3000 my-nodejs-app
 ```
 
 ## Docker publish/push
