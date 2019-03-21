@@ -15,8 +15,18 @@ npm start
 npm run build
 ```
 
-# Docker build
+## Docker build
+```bash
 docker build -t my-nodejs-app .
+```
 
-# Docker run 
+## Docker run
+```bash 
 docker run -d --name my-running-app -p 3000:3000 my-nodejs-app
+```
+
+## Docker publish/push
+```bash
+docker tag my-nodejs-app:latest azakharko/storage:latest
+docker push azakharko/storage:latest
+```
