@@ -13,16 +13,17 @@ npm run build
 
 ## Docker build
 ```bash
-docker build -t my-nodejs-app .
+docker build -t react-frontend-image .
+docker image build -t react-frontend-image .
 ```
 
 ## Docker run
 ```bash 
-docker run -d --name my-running-app -p 8801:3000 my-nodejs-app
+docker run -d --name react-frontend-container -p 8801:3000 react-frontend-image
 ```
 
 ## Docker publish/push
 ```bash
-docker tag my-nodejs-app:latest azakharko/storage:latest
-docker push azakharko/storage:latest
+docker tag react-frontend-image azakharko/storage/react-frontend-image
+docker push azakharko/storage:react-frontend-image
 ```

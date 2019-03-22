@@ -1,10 +1,10 @@
-my-running-app:
-  image: 'azakharko/storage:latest'
+frontend:
+  image: 'react-frontend-image'
   command:
     sh -c 'npm start'
-  container_name: my-running-app
+  container_name: react-frontend-container
   environment:
-    - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/src/app
+    - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     - NODE_VERSION=10.15.3
     - YARN_VERSION=1.13.0
   ports:
