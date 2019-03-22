@@ -1,6 +1,9 @@
 ## Quick Start
 
 ```bash
+# Install project from template
+npx create-react-app .
+
 # Install dependencies
 npm install
 
